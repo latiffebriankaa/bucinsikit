@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>for Dwinta Putri Ayu</title>
+
+    <style>
+      body {
+        background-image: url(gambar7.jpg);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+
+      .heart {
+        color: red;
+        font-size: 50px;
+      }
+
+      .message {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+
+      .button {
+        background-color: #ff6666;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        margin: 20px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      .link-button {
+        background-color: #ff6666;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        margin: 20px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Lopyuu</h1>
+
+    <div class="heart">&#10084;&#65039;</div>
+    <div class="message">Klik terus terusan sayang :*</div>
+    <button class="button" onclick="showMessage()">Klik Aku</button>
+    <div id="loveMessage"></div>
+
+    <div class="message">
+      <button class="button" onclick="myalret()">pencet juga yg ini</button>
+    </div>
+    <script>
+      function myalret() {
+        alert("LOPYU LOPYU LOPYU LOPYU");
+      }
+
+      function showMessage() {
+        const messages = [
+          "sayang maaf ya aku bikin kamu kesel terus.",
+          "sayang kamu adalah penyemangat idup aku.",
+          "jangan marah marah terus ya sayang.",
+          "aku sayang kamu .",
+          "lopyu .",
+        ];
+        const randomMessage =
+          messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById(
+          "loveMessage"
+        ).innerHTML = `<p>${randomMessage}</p>`;
+      }
+    </script>
+    <div class="message">
+      <a href="index.html" class="link-button">slide foto</a>
+    </div>
+  </body>
+</html>
